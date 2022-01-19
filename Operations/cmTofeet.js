@@ -1,9 +1,9 @@
 // cm to feet
-const cmToFeet = (feet, cm) => {
+const cmToFeet = (Feet, Centimeter) => {
     const convert ={
-        feet: 0.0328084,
-        cm: 30.48
+        Feet: 0.0328084,
+        Centimeter: 30.48
     }
-    return feet * convert[cm]
+    return Feet * convert[Centimeter]
 } 
 module.exports = cmToFeet

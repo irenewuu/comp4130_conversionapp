@@ -4,7 +4,7 @@ const { feetToInch, inToCm, mileToKm, cmToFeet } = require('./Operations')
 console.log(feetToInch(3, "Inch"))
 
 // Hyerin : Centimeter to Feet
-console.log(cmToFeet(18, "Feet"))
+console.log(cmToFeet(18, "Centimeter"))
 
 // Youn Soo : Inch to Centimeter
 console.log(inToCm(20, "Centimeter"))
