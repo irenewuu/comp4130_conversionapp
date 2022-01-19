@@ -1,4 +1,4 @@
-
+// Inch to Centimeter
 const inToCm = (amount, conversion) => {
     const rates = {
         Inch: 0.3937007874,

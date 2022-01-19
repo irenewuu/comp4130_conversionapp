@@ -1,13 +1,13 @@
 const { feetToInch, inToCm, mileToKm, cmToFeet } = require('./Operations')
 
-// Irene : feet to in
-console.log(feetToInch(3, "Feet"))
+// Irene : Feet to Inch
+console.log(feetToInch(3, "Inch"))
 
-// Hyerin : cm to feet
-console.log(cmToFeet(18, "cm"))
+// Hyerin : Centimeter to Feet
+console.log(cmToFeet(18, "Feet"))
 
-// Youn Soo : inch to centimeter
-console.log(inToCm(20, "Inch"))
+// Youn Soo : Inch to Centimeter
+console.log(inToCm(20, "Centimeter"))
 
-// Chisaki : miles to km
-console.log(mileToKm(10, "mile"))
+// Chisaki : Mile to Kilometer
+console.log(mileToKm(10, "Kilometer"))
