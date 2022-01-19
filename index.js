@@ -3,8 +3,8 @@ const { feetToInch, inToCm, mileToKm, cmToFeet } = require('./Operations')
 // Irene : feet to in
 console.log(feetToInch(3, "Feet"))
 
-// Hyerin : temparature F to C
-console.log(cmToFeet(18, "feet"))
+// Hyerin : cm to feet
+console.log(cmToFeet(18, "cm"))
 
 // Youn Soo : inch to centimeter
 console.log(inToCm(20, "Inch"))

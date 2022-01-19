@@ -1,4 +1,4 @@
-// Celsius to  Fahrenheit
+// cm to feet
 const cmToFeet = (feet, cm) => {
     const convert ={
         feet: 0.0328084,
