@@ -1,6 +1,3 @@
-// const inToCm = (convert)=>{
-//  return convert * 2.54;
-// }
 
 const inToCm = (amount, conversion) => {
     const rates = {

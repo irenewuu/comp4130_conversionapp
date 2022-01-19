@@ -1,7 +1,4 @@
-// converting feet to inch only
-    // const feetToInch = (amount) => {
-    //     return amount * 12;
-    // }
+// converting feet to inch
 
 const feetToInch = (amount, conversion) => {
     const rates = {
