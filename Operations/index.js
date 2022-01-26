@@ -1,13 +1,13 @@
-const cmToFeet = require('./cmTofeet');
-const feetToInch = require('./ftToIn');
-const mileToKm = require('./mileToKm');
-const inToCm = require('./inToCm');
+const CmFtConversion = require('./CmFtConversion');
+const FtInConversion = require('./FtInConversion');
+const MiKmConversion = require('./MiKmConversion');
+const InCmConversion = require('./InCmConversion');
 
 
 
 module.exports = {
-    cmToFeet,
-    feetToInch,
-    mileToKm,
-    inToCm,
+    CmFtConversion,
+    FtInConversion,
+    MiKmConversion,
+    InCmConversion,
 };

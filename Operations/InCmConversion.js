@@ -1,5 +1,5 @@
 // Inch to Centimeter
-const inToCm = (amount, conversion) => {
+const InCmConversion = (amount, conversion) => {
     const rates = {
         Inch: 0.3937007874,
         Centimeter: 2.54
@@ -7,4 +7,5 @@ const inToCm = (amount, conversion) => {
     return amount * rates[conversion];
 }
 
-module.exports = inToCm
+module.exports = InCmConversion
+// inToCm

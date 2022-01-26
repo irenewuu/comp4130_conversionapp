@@ -1,4 +1,4 @@
-const mileToKm = (length, output)=>{
+const MiKmConversion = (length, output)=>{
     const convert = {
         Mile:0.621371,
         Kilometer:1.609344
@@ -6,4 +6,5 @@ const mileToKm = (length, output)=>{
     return length * convert [output];
 }
 
-module.exports = mileToKm
+module.exports = MiKmConversion
+// mileToKm

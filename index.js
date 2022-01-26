@@ -1,4 +1,4 @@
-const { feetToInch, inToCm, mileToKm, cmToFeet } = require('./Operations')
+const { FtInConversion, InCmConversion, MiKmConversion, CmFtConversion } = require('./Operations')
 
 const http = require('http')
 const url = require('url')
@@ -16,14 +16,14 @@ const app = http.createServer((req, res)=>{
         case '/':
             res.end('welcome')
             break
-        case '/cm-to-ft':
+        case '/cm-ft-conversion':
             if(queries.Centimeter) {
                 res.write("Centimeter to Feet: ") 
-                res.end(String(cmToFeet(queries.Centimeter,"Feet") + "ft"))
+                res.end(String(CmFtConversion(queries.Centimeter,"Feet") + "ft"))
 
             } else if(queries.Feet) {
                 res.write("Feet to Centimeter: ") 
-                res.end(String(cmToFeet(queries.Feet,"Centimeter") + "cm"))
+                res.end(String(CmFtConversion(queries.Feet,"Centimeter") + "cm"))
 
             } else {
                 res.write("error, please clarify if you want Feet or Centimeter conversion. ") 
@@ -31,14 +31,14 @@ const app = http.createServer((req, res)=>{
             }
             break;
 
-        case '/ft-to-in':
+        case '/ft-in-conversion':
             if(queries.Inch) {
                 res.write("Inch to Feet: ") 
-                res.end(String(feetToInch(queries.Inch,"Feet") + "ft"))
+                res.end(String(FtInConversion(queries.Inch,"Feet") + "ft"))
                 
             } else if(queries.Feet) {
                 res.write("Feet to Inch: ") 
-                res.end(String(feetToInch(queries.Feet,"Inch") + "in"))
+                res.end(String(FtInConversion(queries.Feet,"Inch") + "in"))
 
             } else {
                 res.write("error, please clarify if you want Feet or Inch conversion. ") 
@@ -46,14 +46,14 @@ const app = http.createServer((req, res)=>{
             }
             break;
 
-        case '/in-to-cm':
+        case '/in-cm-conversion':
             if(queries.Inch) {
                 res.write("Inch to Centimeter: ") 
-                res.end(String(inToCm(queries.Inch,"Centimeter") + "cm"))
+                res.end(String(InCmConversion(queries.Inch,"Centimeter") + "cm"))
                 
             } else if(queries.Centimeter) {
                 res.write("Centimeter to Inch: ") 
-                res.end(String(inToCm(queries.Centimeter,"Inch") + "in"))
+                res.end(String(InCmConversion(queries.Centimeter,"Inch") + "in"))
 
             } else {
                 res.write("error, please clarify if you want Centimeter or Inch conversion. ") 
@@ -61,14 +61,14 @@ const app = http.createServer((req, res)=>{
             }
             break;
 
-        case '/miles-to-km':
+        case '/mile-km-conversion':
             if(queries.Mile) {
                 res.write("Mile to Kilometer: ") 
-                res.end(String(mileToKm(queries.Mile,"Kilometer") + "km"))
+                res.end(String(MiKmConversion(queries.Mile,"Kilometer") + "km"))
                 
             } else if(queries.Kilometer) {
                 res.write("Kilometer to Mile: ") 
-                res.end(String(mileToKm(queries.Kilometer,"Mile") + "mi"))
+                res.end(String(MiKmConversion(queries.Kilometer,"Mile") + "mi"))
 
             } else {
                 res.write("error, please clarify if you want Kilometer or Mile conversion. ") 
