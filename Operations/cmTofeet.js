@@ -1,8 +1,8 @@
 // cm to feet
 const cmToFeet = (amount, conversion) => {
     const rates = {
-        Feet: 0.2,
-        Centimeter: 2
+        Feet: 0.03280839895013123,
+        Centimeter: 30.48
     }
     return amount * rates[conversion];
 } 

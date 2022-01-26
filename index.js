@@ -17,32 +17,64 @@ const app = http.createServer((req, res)=>{
             res.end('welcome')
             break
         case '/cm-to-ft':
-            // res.end(JSON.stringify(data))
-            // returns whats the data object
-            // res.end("centimeter to feet")
-            // res.end(JSON.stringify(queries))
-            res.end(String(cmToFeet(queries.Centimeter,"Feet")))
-            break
-        case '/ft-to-in':
-            // res.end(String(convert(queries.data)))
-            // res.send('hel');
-            // res.write(JSON.stringify(Object.values(queries)[1]))
-            res.write("feet to inch: ") 
-            res.end(String(feetToInch(queries.feet, "Inch")))
-            break;
-            
-// console.log(mileToKm(10, "Kilometer"))
-            res.end('stop')
+            if(queries.Centimeter) {
+                res.write("Centimeter to Feet: ") 
+                res.end(String(cmToFeet(queries.Centimeter,"Feet") + "ft"))
 
-            
-            break
+            } else if(queries.Feet) {
+                res.write("Feet to Centimeter: ") 
+                res.end(String(cmToFeet(queries.Feet,"Centimeter") + "cm"))
+
+            } else {
+                res.write("error, please clarify if you want Feet or Centimeter conversion. ") 
+                res.end("example: Centimeter=30.48")
+            }
+            break;
+
+        case '/ft-to-in':
+            if(queries.Inch) {
+                res.write("Inch to Feet: ") 
+                res.end(String(feetToInch(queries.Inch,"Feet") + "ft"))
+                
+            } else if(queries.Feet) {
+                res.write("Feet to Inch: ") 
+                res.end(String(feetToInch(queries.Feet,"Inch") + "in"))
+
+            } else {
+                res.write("error, please clarify if you want Feet or Inch conversion. ") 
+                res.end("example: Inch=12")
+            }
+            break;
+
         case '/in-to-cm':
-            res.end('inch to centimeter')
-            break
+            if(queries.Inch) {
+                res.write("Inch to Centimeter: ") 
+                res.end(String(inToCm(queries.Inch,"Centimeter") + "cm"))
+                
+            } else if(queries.Centimeter) {
+                res.write("Centimeter to Inch: ") 
+                res.end(String(inToCm(queries.Centimeter,"Inch") + "in"))
+
+            } else {
+                res.write("error, please clarify if you want Centimeter or Inch conversion. ") 
+                res.end("example: Inch=12")
+            }
+            break;
+
         case '/miles-to-km':
-            //res.end('miles to kilometer')
-            res.end(String(mileToKm(queries.mile,"Kilometer")))
-            break
+            if(queries.Mile) {
+                res.write("Mile to Kilometer: ") 
+                res.end(String(mileToKm(queries.Mile,"Kilometer") + "km"))
+                
+            } else if(queries.Kilometer) {
+                res.write("Kilometer to Mile: ") 
+                res.end(String(mileToKm(queries.Kilometer,"Mile") + "mi"))
+
+            } else {
+                res.write("error, please clarify if you want Kilometer or Mile conversion. ") 
+                res.end("example: Mile=12")
+            }
+            break;
         
         default:
             res.end('unknown url')
