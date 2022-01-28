@@ -12,6 +12,7 @@ mi-km-conversion (then add ?Mile= or ?Kilometer= after it, along with the value 
 `)
 })
 
+// younsoo
 router.get('/cm-ft-conversion', (req, res)=> {
         if(req.query.Centimeter) {
         res.write("Centimeter to Feet: ") 
@@ -27,6 +28,7 @@ router.get('/cm-ft-conversion', (req, res)=> {
     }
 })
 
+// irene
 router.get('/ft-in-conversion', (req, res)=> {
     if(req.query.Inch) {
         res.write("Inch to Feet: ") 
@@ -42,6 +44,7 @@ router.get('/ft-in-conversion', (req, res)=> {
     }
 })
 
+// hyerin
 router.get('/in-cm-conversion', (req, res)=> {
     if(req.query.Inch) {
         res.write("Inch to Centimeter: ") 
@@ -57,6 +60,7 @@ router.get('/in-cm-conversion', (req, res)=> {
     }
 })
 
+// chisaki
 router.get('/mi-km-conversion', (req, res)=> {
     if(req.query.Mile) {
         res.write("Mile to Kilometer: ") 

@@ -1,3 +1,4 @@
+// Mile to Kilometer: Chisaki
 const MiKmConversion = (length, output)=>{
     const convert = {
         Mile:0.621371,
@@ -7,4 +8,3 @@ const MiKmConversion = (length, output)=>{
 }
 
 module.exports = MiKmConversion
-// mileToKm

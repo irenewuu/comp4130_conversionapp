@@ -1,4 +1,4 @@
-// cm to feet
+// Centimeter to Feet: Younsooo
 const CmFtConversion = (amount, conversion) => {
     const rates = {
         Feet: 0.03280839895013123,
@@ -7,4 +7,3 @@ const CmFtConversion = (amount, conversion) => {
     return amount * rates[conversion];
 } 
 module.exports = CmFtConversion
-// cmToFeet

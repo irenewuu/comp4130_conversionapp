@@ -1,4 +1,4 @@
-// Inch to Centimeter
+// Inch to Centimeter - Hyerin
 const InCmConversion = (amount, conversion) => {
     const rates = {
         Inch: 0.3937007874,
@@ -8,4 +8,3 @@ const InCmConversion = (amount, conversion) => {
 }
 
 module.exports = InCmConversion
-// inToCm
