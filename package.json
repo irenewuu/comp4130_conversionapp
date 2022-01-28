@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/irenewuu/comp4130_conversionapp/issues"
   },
-  "homepage": "https://github.com/irenewuu/comp4130_conversionapp#readme"
+  "homepage": "https://github.com/irenewuu/comp4130_conversionapp#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
